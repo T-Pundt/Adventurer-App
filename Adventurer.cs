@@ -24,5 +24,14 @@ namespace Final_Project
         {
 
         }
+
+        private void gMapControl1_Load(object sender, EventArgs e)
+        {
+            gmap.MapProvider = GMap.NET.MapProviders.BingMapProvider.Instance;
+            GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly;
+            gmap.Position = new GMap.NET.PointLatLng(44.0121, -92.4802);
+            gmap.Zoom = 7;
+            gmap.ShowCenter = false;
+        }
     }
 }
