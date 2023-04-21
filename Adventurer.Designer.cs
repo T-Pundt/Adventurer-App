@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.gmap = new GMap.NET.WindowsForms.GMapControl();
+            this.DisplayCordinate = new System.Windows.Forms.TextBox();
+            this.UpdateCordinatesTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // gmap
@@ -43,7 +46,7 @@
             this.gmap.Bearing = 0F;
             this.gmap.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.gmap.CanDragMap = true;
-            this.gmap.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.gmap.Cursor = System.Windows.Forms.Cursors.Default;
             this.gmap.EmptyTileColor = System.Drawing.Color.Navy;
             this.gmap.GrayScaleMode = false;
             this.gmap.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
@@ -68,22 +71,42 @@
             this.gmap.Zoom = 13D;
             this.gmap.Load += new System.EventHandler(this.gMapControl1_Load);
             // 
+            // DisplayCordinate
+            // 
+            this.DisplayCordinate.BackColor = System.Drawing.Color.White;
+            this.DisplayCordinate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DisplayCordinate.ForeColor = System.Drawing.Color.Black;
+            this.DisplayCordinate.Location = new System.Drawing.Point(960, 740);
+            this.DisplayCordinate.Name = "DisplayCordinate";
+            this.DisplayCordinate.Size = new System.Drawing.Size(262, 13);
+            this.DisplayCordinate.TabIndex = 1;
+            this.DisplayCordinate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // UpdateCordinatesTimer
+            // 
+            this.UpdateCordinatesTimer.Enabled = true;
+            this.UpdateCordinatesTimer.Tick += new System.EventHandler(this.UpdateCordinatesTimer_Tick);
+            // 
             // Adventurer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1223, 762);
+            this.Controls.Add(this.DisplayCordinate);
             this.Controls.Add(this.gmap);
             this.Name = "Adventurer";
             this.Text = "Adventurer";
             this.Load += new System.EventHandler(this.Adventurer_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private GMap.NET.WindowsForms.GMapControl gmap;
+        private System.Windows.Forms.Timer UpdateCordinatesTimer;
+        private System.Windows.Forms.TextBox DisplayCordinate;
     }
 }
 

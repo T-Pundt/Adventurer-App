@@ -31,7 +31,12 @@ namespace Final_Project
             GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly;
             gmap.Position = new GMap.NET.PointLatLng(44.0121, -92.4802);
             gmap.Zoom = 7;
-            gmap.ShowCenter = false;
+            gmap.ShowCenter = true;
+        }
+
+        private void UpdateCordinatesTimer_Tick(object sender, EventArgs e)
+        {
+            DisplayCordinate.Text = gmap.Position.ToString();
         }
     }
 }
