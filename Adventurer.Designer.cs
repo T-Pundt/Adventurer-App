@@ -35,7 +35,8 @@
             this.UpdateCordinatesTimer = new System.Windows.Forms.Timer(this.components);
             this.CurrentCordinatesLabel = new System.Windows.Forms.Label();
             this.AddPinLabel = new System.Windows.Forms.Label();
-            this.AddFishingPin = new System.Windows.Forms.Button();
+            this.AddFishingPinButton = new System.Windows.Forms.Button();
+            this.AddClimbingPinButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // gmap
@@ -94,36 +95,47 @@
             this.CurrentCordinatesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CurrentCordinatesLabel.Location = new System.Drawing.Point(1310, 709);
             this.CurrentCordinatesLabel.Name = "CurrentCordinatesLabel";
-            this.CurrentCordinatesLabel.Size = new System.Drawing.Size(105, 15);
+            this.CurrentCordinatesLabel.Size = new System.Drawing.Size(109, 15);
             this.CurrentCordinatesLabel.TabIndex = 2;
-            this.CurrentCordinatesLabel.Text = "Current Codinates";
+            this.CurrentCordinatesLabel.Text = "Current Cordinates";
             this.CurrentCordinatesLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // AddPinLabel
             // 
             this.AddPinLabel.AutoSize = true;
             this.AddPinLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddPinLabel.Location = new System.Drawing.Point(1339, 9);
+            this.AddPinLabel.Location = new System.Drawing.Point(1332, 9);
             this.AddPinLabel.Name = "AddPinLabel";
             this.AddPinLabel.Size = new System.Drawing.Size(49, 15);
             this.AddPinLabel.TabIndex = 3;
             this.AddPinLabel.Text = "Add Pin";
             // 
-            // AddFishingPin
+            // AddFishingPinButton
             // 
-            this.AddFishingPin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddFishingPin.BackgroundImage")));
-            this.AddFishingPin.Location = new System.Drawing.Point(1240, 46);
-            this.AddFishingPin.Name = "AddFishingPin";
-            this.AddFishingPin.Size = new System.Drawing.Size(75, 75);
-            this.AddFishingPin.TabIndex = 4;
-            this.AddFishingPin.UseVisualStyleBackColor = true;
+            this.AddFishingPinButton.BackColor = System.Drawing.SystemColors.Control;
+            this.AddFishingPinButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddFishingPinButton.BackgroundImage")));
+            this.AddFishingPinButton.Location = new System.Drawing.Point(1236, 46);
+            this.AddFishingPinButton.Name = "AddFishingPinButton";
+            this.AddFishingPinButton.Size = new System.Drawing.Size(75, 75);
+            this.AddFishingPinButton.TabIndex = 5;
+            this.AddFishingPinButton.UseVisualStyleBackColor = false;
+            // 
+            // AddClimbingPinButton
+            // 
+            this.AddClimbingPinButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddClimbingPinButton.BackgroundImage")));
+            this.AddClimbingPinButton.Location = new System.Drawing.Point(1406, 46);
+            this.AddClimbingPinButton.Name = "AddClimbingPinButton";
+            this.AddClimbingPinButton.Size = new System.Drawing.Size(75, 75);
+            this.AddClimbingPinButton.TabIndex = 5;
+            this.AddClimbingPinButton.UseVisualStyleBackColor = true;
             // 
             // Adventurer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1493, 762);
-            this.Controls.Add(this.AddFishingPin);
+            this.Controls.Add(this.AddClimbingPinButton);
+            this.Controls.Add(this.AddFishingPinButton);
             this.Controls.Add(this.AddPinLabel);
             this.Controls.Add(this.CurrentCordinatesLabel);
             this.Controls.Add(this.DisplayCordinate);
@@ -143,7 +155,8 @@
         private System.Windows.Forms.TextBox DisplayCordinate;
         private System.Windows.Forms.Label CurrentCordinatesLabel;
         private System.Windows.Forms.Label AddPinLabel;
-        private System.Windows.Forms.Button AddFishingPin;
+        private System.Windows.Forms.Button AddFishingPinButton;
+        private System.Windows.Forms.Button AddClimbingPinButton;
     }
 }
 
