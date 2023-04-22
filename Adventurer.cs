@@ -38,5 +38,6 @@ namespace Final_Project
         {
             DisplayCordinate.Text = gmap.Position.ToString();
         }
+
     }
 }

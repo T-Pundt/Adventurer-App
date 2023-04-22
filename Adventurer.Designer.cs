@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Adventurer));
             this.gmap = new GMap.NET.WindowsForms.GMapControl();
             this.DisplayCordinate = new System.Windows.Forms.TextBox();
             this.UpdateCordinatesTimer = new System.Windows.Forms.Timer(this.components);
+            this.CurrentCordinatesLabel = new System.Windows.Forms.Label();
+            this.AddPinLabel = new System.Windows.Forms.Label();
+            this.AddFishingPin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // gmap
             // 
             this.gmap.AllowDrop = true;
-            this.gmap.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.gmap.AutoScroll = true;
             this.gmap.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.gmap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -73,25 +74,58 @@
             // 
             // DisplayCordinate
             // 
-            this.DisplayCordinate.BackColor = System.Drawing.Color.White;
-            this.DisplayCordinate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DisplayCordinate.BackColor = System.Drawing.SystemColors.Control;
+            this.DisplayCordinate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.DisplayCordinate.ForeColor = System.Drawing.Color.Black;
-            this.DisplayCordinate.Location = new System.Drawing.Point(960, 740);
+            this.DisplayCordinate.Location = new System.Drawing.Point(1226, 737);
             this.DisplayCordinate.Name = "DisplayCordinate";
-            this.DisplayCordinate.Size = new System.Drawing.Size(262, 13);
+            this.DisplayCordinate.Size = new System.Drawing.Size(262, 20);
             this.DisplayCordinate.TabIndex = 1;
-            this.DisplayCordinate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.DisplayCordinate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // UpdateCordinatesTimer
             // 
             this.UpdateCordinatesTimer.Enabled = true;
             this.UpdateCordinatesTimer.Tick += new System.EventHandler(this.UpdateCordinatesTimer_Tick);
             // 
+            // CurrentCordinatesLabel
+            // 
+            this.CurrentCordinatesLabel.AutoSize = true;
+            this.CurrentCordinatesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CurrentCordinatesLabel.Location = new System.Drawing.Point(1310, 709);
+            this.CurrentCordinatesLabel.Name = "CurrentCordinatesLabel";
+            this.CurrentCordinatesLabel.Size = new System.Drawing.Size(105, 15);
+            this.CurrentCordinatesLabel.TabIndex = 2;
+            this.CurrentCordinatesLabel.Text = "Current Codinates";
+            this.CurrentCordinatesLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // AddPinLabel
+            // 
+            this.AddPinLabel.AutoSize = true;
+            this.AddPinLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddPinLabel.Location = new System.Drawing.Point(1339, 9);
+            this.AddPinLabel.Name = "AddPinLabel";
+            this.AddPinLabel.Size = new System.Drawing.Size(49, 15);
+            this.AddPinLabel.TabIndex = 3;
+            this.AddPinLabel.Text = "Add Pin";
+            // 
+            // AddFishingPin
+            // 
+            this.AddFishingPin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddFishingPin.BackgroundImage")));
+            this.AddFishingPin.Location = new System.Drawing.Point(1240, 46);
+            this.AddFishingPin.Name = "AddFishingPin";
+            this.AddFishingPin.Size = new System.Drawing.Size(75, 75);
+            this.AddFishingPin.TabIndex = 4;
+            this.AddFishingPin.UseVisualStyleBackColor = true;
+            // 
             // Adventurer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1223, 762);
+            this.ClientSize = new System.Drawing.Size(1493, 762);
+            this.Controls.Add(this.AddFishingPin);
+            this.Controls.Add(this.AddPinLabel);
+            this.Controls.Add(this.CurrentCordinatesLabel);
             this.Controls.Add(this.DisplayCordinate);
             this.Controls.Add(this.gmap);
             this.Name = "Adventurer";
@@ -107,6 +141,9 @@
         private GMap.NET.WindowsForms.GMapControl gmap;
         private System.Windows.Forms.Timer UpdateCordinatesTimer;
         private System.Windows.Forms.TextBox DisplayCordinate;
+        private System.Windows.Forms.Label CurrentCordinatesLabel;
+        private System.Windows.Forms.Label AddPinLabel;
+        private System.Windows.Forms.Button AddFishingPin;
     }
 }
 
