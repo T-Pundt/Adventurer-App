@@ -18,13 +18,6 @@ namespace Final_Project
             get { return textBox1.Text; }
         }
 
-        public bool createNew
-        {
-            get { return createNew; }
-
-        }
-
-
 
         public FishingMessageBox()
         {
