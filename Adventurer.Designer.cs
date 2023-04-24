@@ -121,6 +121,7 @@
             this.AddFishingPinButton.Size = new System.Drawing.Size(75, 75);
             this.AddFishingPinButton.TabIndex = 5;
             this.AddFishingPinButton.UseVisualStyleBackColor = false;
+            this.AddFishingPinButton.Click += new System.EventHandler(this.AddFishingPinButton_Click);
             // 
             // AddClimbingPinButton
             // 

@@ -34,11 +34,22 @@ namespace Final_Project
             gmap.ShowCenter = true;
         }
 
+        #region Timer For Cordinates Update
         private void UpdateCordinatesTimer_Tick(object sender, EventArgs e)
         {
             DisplayCordinate.Text = gmap.Position.ToString();
         }
+        #endregion
 
-
+        private void AddFishingPinButton_Click(object sender, EventArgs e)
+        {
+            FishingMessageBox fishingmessagebox = new FishingMessageBox();
+            fishingmessagebox.Show();
+            fishingmessagebox.Visible = false;
+            if (fishingmessagebox.ShowDialog() == DialogResult.OK )
+            {
+                var data = fishingmessagebox.DataFromFormtwo;
+            }
+        }
     }
 }

@@ -255,10 +255,19 @@
     <Compile Include="Adventurer.Designer.cs">
       <DependentUpon>Adventurer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Message Boxes\FishingMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message Boxes\FishingMessageBox.Designer.cs">
+      <DependentUpon>FishingMessageBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Adventurer.resx">
       <DependentUpon>Adventurer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message Boxes\FishingMessageBox.resx">
+      <DependentUpon>FishingMessageBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
