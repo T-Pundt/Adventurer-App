@@ -19,6 +19,8 @@ namespace Final_Project
 
         private bool _yesOrNoBoxWasClicked = false;
 
+        private string _pictureFileName;
+
         public string StringOfFish
         {
             get { return ListOfFishTextBox.Text; }
@@ -28,9 +30,16 @@ namespace Final_Project
         {
             get { return _boatAccessability;}
         }
+
+        public string PictureFileName
+        {
+            get { return _pictureFileName; }
+        }
+
+
         #endregion
 
-
+        #region Loading
         public FishingMessageBox()
         {
             InitializeComponent();
@@ -40,7 +49,7 @@ namespace Final_Project
         {
 
         }
-
+        #endregion
 
         #region Update Bars
         private void TimerToUpdateDepthBar_Tick(object sender, EventArgs e)
@@ -69,7 +78,6 @@ namespace Final_Project
 
         #endregion
 
-
         #region Buttons
         private void YesButton_Click(object sender, EventArgs e)
         {
@@ -94,9 +102,18 @@ namespace Final_Project
 
         #endregion
 
-        private void ListOfFishTextBox_TextChanged(object sender, EventArgs e)
+        private void UploadPictureButton_Click(object sender, EventArgs e)
         {
+            UpLoadPictureDialog.Filter = "Image Files (*.bmp;*.jpg;*.png)|*.bmp;*.jpg;*.png";
 
+            DialogResult result = UpLoadPictureDialog.ShowDialog();
+            if (result == DialogResult.OK) 
+            {
+                _pictureFileName = UpLoadPictureDialog.FileName;
+                MessageBox.Show("You selected " + _pictureFileName);
+
+                DisplaySelectedPictureBox.Image = Image.FromFile(_pictureFileName);
+            }
         }
     }
 }

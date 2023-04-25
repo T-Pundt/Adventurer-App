@@ -50,6 +50,9 @@ namespace Final_Project
             {
                 var data = fishingmessagebox.StringOfFish;
                 var boataccess = fishingmessagebox.BoatAccessability;
+                var FileName = fishingmessagebox.PictureFileName;
+
+
             }
         }
     }

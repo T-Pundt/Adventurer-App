@@ -43,13 +43,19 @@
             this.NoButton = new System.Windows.Forms.Button();
             this.FishThatAreFoundInTheAreaLabel = new System.Windows.Forms.Label();
             this.ListOfFishTextBox = new System.Windows.Forms.TextBox();
+            this.UpLoadPictureDialog = new System.Windows.Forms.OpenFileDialog();
+            this.UploadPictureButton = new System.Windows.Forms.Button();
+            this.AddAPictureButton = new System.Windows.Forms.Label();
+            this.DisplayPictureSelected = new System.Windows.Forms.Label();
+            this.DisplaySelectedPictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.WaterDepthBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WaterClarityBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DisplaySelectedPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // CreateFishingClass
             // 
-            this.CreateFishingClass.Location = new System.Drawing.Point(592, 770);
+            this.CreateFishingClass.Location = new System.Drawing.Point(592, 612);
             this.CreateFishingClass.Name = "CreateFishingClass";
             this.CreateFishingClass.Size = new System.Drawing.Size(105, 45);
             this.CreateFishingClass.TabIndex = 1;
@@ -175,13 +181,60 @@
             this.ListOfFishTextBox.Name = "ListOfFishTextBox";
             this.ListOfFishTextBox.Size = new System.Drawing.Size(685, 20);
             this.ListOfFishTextBox.TabIndex = 14;
-            this.ListOfFishTextBox.TextChanged += new System.EventHandler(this.ListOfFishTextBox_TextChanged);
+            // 
+            // UpLoadPictureDialog
+            // 
+            this.UpLoadPictureDialog.FileName = "openFileDialog1";
+            // 
+            // UploadPictureButton
+            // 
+            this.UploadPictureButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UploadPictureButton.Location = new System.Drawing.Point(323, 523);
+            this.UploadPictureButton.Name = "UploadPictureButton";
+            this.UploadPictureButton.Size = new System.Drawing.Size(64, 47);
+            this.UploadPictureButton.TabIndex = 15;
+            this.UploadPictureButton.Text = "Add Picture";
+            this.UploadPictureButton.UseVisualStyleBackColor = true;
+            this.UploadPictureButton.Click += new System.EventHandler(this.UploadPictureButton_Click);
+            // 
+            // AddAPictureButton
+            // 
+            this.AddAPictureButton.AutoSize = true;
+            this.AddAPictureButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddAPictureButton.Location = new System.Drawing.Point(310, 492);
+            this.AddAPictureButton.Name = "AddAPictureButton";
+            this.AddAPictureButton.Size = new System.Drawing.Size(88, 16);
+            this.AddAPictureButton.TabIndex = 16;
+            this.AddAPictureButton.Text = "Add A Picture";
+            // 
+            // DisplayPictureSelected
+            // 
+            this.DisplayPictureSelected.AutoSize = true;
+            this.DisplayPictureSelected.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DisplayPictureSelected.Location = new System.Drawing.Point(12, 554);
+            this.DisplayPictureSelected.Name = "DisplayPictureSelected";
+            this.DisplayPictureSelected.Size = new System.Drawing.Size(105, 16);
+            this.DisplayPictureSelected.TabIndex = 17;
+            this.DisplayPictureSelected.Text = "Selected Picture";
+            // 
+            // DisplaySelectedPictureBox
+            // 
+            this.DisplaySelectedPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DisplaySelectedPictureBox.Location = new System.Drawing.Point(12, 582);
+            this.DisplaySelectedPictureBox.Name = "DisplaySelectedPictureBox";
+            this.DisplaySelectedPictureBox.Size = new System.Drawing.Size(75, 75);
+            this.DisplaySelectedPictureBox.TabIndex = 18;
+            this.DisplaySelectedPictureBox.TabStop = false;
             // 
             // FishingMessageBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(709, 827);
+            this.ClientSize = new System.Drawing.Size(709, 668);
+            this.Controls.Add(this.DisplaySelectedPictureBox);
+            this.Controls.Add(this.DisplayPictureSelected);
+            this.Controls.Add(this.AddAPictureButton);
+            this.Controls.Add(this.UploadPictureButton);
             this.Controls.Add(this.ListOfFishTextBox);
             this.Controls.Add(this.FishThatAreFoundInTheAreaLabel);
             this.Controls.Add(this.NoButton);
@@ -200,6 +253,7 @@
             this.Load += new System.EventHandler(this.FishingMessageBox_Load);
             ((System.ComponentModel.ISupportInitialize)(this.WaterDepthBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WaterClarityBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DisplaySelectedPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,5 +274,10 @@
         private System.Windows.Forms.Button NoButton;
         private System.Windows.Forms.Label FishThatAreFoundInTheAreaLabel;
         private System.Windows.Forms.TextBox ListOfFishTextBox;
+        private System.Windows.Forms.OpenFileDialog UpLoadPictureDialog;
+        private System.Windows.Forms.Button UploadPictureButton;
+        private System.Windows.Forms.Label AddAPictureButton;
+        private System.Windows.Forms.Label DisplayPictureSelected;
+        private System.Windows.Forms.PictureBox DisplaySelectedPictureBox;
     }
 }
