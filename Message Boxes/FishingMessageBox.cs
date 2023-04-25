@@ -13,10 +13,22 @@ namespace Final_Project
 {
     public partial class FishingMessageBox : Form
     {
-        public string DataFromFormtwo
+
+        #region Properties
+        private bool _boatAccessability = false;
+
+        private bool _yesOrNoBoxWasClicked = false;
+
+        public string StringOfFish
         {
-            get { return DisplayCurrentDepthForTrackBar.Text; }
+            get { return ListOfFishTextBox.Text; }
         }
+
+        public bool BoatAccessability
+        {
+            get { return _boatAccessability;}
+        }
+        #endregion
 
 
         public FishingMessageBox()
@@ -29,12 +41,8 @@ namespace Final_Project
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.DialogResult = DialogResult.OK;
-            this.Close();
-        }
 
+        #region Update Bars
         private void TimerToUpdateDepthBar_Tick(object sender, EventArgs e)
         {
             if (WaterDepthBar.Value == 100)
@@ -45,6 +53,50 @@ namespace Final_Project
             {
                 DisplayCurrentDepthForTrackBar.Text = WaterDepthBar.Value.ToString();
             }
+
+            if (WaterClarityBar.Value == 10)
+            {
+                DisplayCurrentWaterClarityForBar.Text = ">10";
+            }
+            else
+            {
+                DisplayCurrentWaterClarityForBar.Text = WaterClarityBar.Value.ToString();
+            }
+
+
+        }
+
+
+        #endregion
+
+
+        #region Buttons
+        private void YesButton_Click(object sender, EventArgs e)
+        {
+           _yesOrNoBoxWasClicked = true;
+            _boatAccessability = true;
+        }
+
+        private void NoButton_Click(object sender, EventArgs e)
+        {
+            _yesOrNoBoxWasClicked = true;
+            _boatAccessability = false;
+        }
+
+        private void CreateFishingClass_Clicked(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
+
+
+
+
+        #endregion
+
+        private void ListOfFishTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

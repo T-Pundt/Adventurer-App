@@ -29,24 +29,33 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button1 = new System.Windows.Forms.Button();
+            this.CreateFishingClass = new System.Windows.Forms.Button();
             this.WaterDepthBar = new System.Windows.Forms.TrackBar();
             this.label1 = new System.Windows.Forms.Label();
             this.MaximumWaterDepthLabel = new System.Windows.Forms.Label();
             this.DisplayCurrentDepthForTrackBar = new System.Windows.Forms.TextBox();
             this.TimerToUpdateDepthBar = new System.Windows.Forms.Timer(this.components);
+            this.WaterClarityBar = new System.Windows.Forms.TrackBar();
+            this.WaterClarityBarLabel = new System.Windows.Forms.Label();
+            this.DisplayCurrentWaterClarityForBar = new System.Windows.Forms.TextBox();
+            this.BoatAccessibilityLabel = new System.Windows.Forms.Label();
+            this.YesButton = new System.Windows.Forms.Button();
+            this.NoButton = new System.Windows.Forms.Button();
+            this.FishThatAreFoundInTheAreaLabel = new System.Windows.Forms.Label();
+            this.ListOfFishTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.WaterDepthBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WaterClarityBar)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // CreateFishingClass
             // 
-            this.button1.Location = new System.Drawing.Point(592, 624);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 45);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Create";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.CreateFishingClass.Location = new System.Drawing.Point(592, 770);
+            this.CreateFishingClass.Name = "CreateFishingClass";
+            this.CreateFishingClass.Size = new System.Drawing.Size(105, 45);
+            this.CreateFishingClass.TabIndex = 1;
+            this.CreateFishingClass.Text = "Create";
+            this.CreateFishingClass.UseVisualStyleBackColor = true;
+            this.CreateFishingClass.Click += new System.EventHandler(this.CreateFishingClass_Clicked);
             // 
             // WaterDepthBar
             // 
@@ -92,31 +101,124 @@
             this.TimerToUpdateDepthBar.Interval = 50;
             this.TimerToUpdateDepthBar.Tick += new System.EventHandler(this.TimerToUpdateDepthBar_Tick);
             // 
+            // WaterClarityBar
+            // 
+            this.WaterClarityBar.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.WaterClarityBar.Location = new System.Drawing.Point(12, 172);
+            this.WaterClarityBar.Name = "WaterClarityBar";
+            this.WaterClarityBar.Size = new System.Drawing.Size(685, 45);
+            this.WaterClarityBar.TabIndex = 7;
+            // 
+            // WaterClarityBarLabel
+            // 
+            this.WaterClarityBarLabel.AutoSize = true;
+            this.WaterClarityBarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WaterClarityBarLabel.Location = new System.Drawing.Point(298, 137);
+            this.WaterClarityBarLabel.Name = "WaterClarityBarLabel";
+            this.WaterClarityBarLabel.Size = new System.Drawing.Size(100, 16);
+            this.WaterClarityBarLabel.TabIndex = 8;
+            this.WaterClarityBarLabel.Text = "Water Clarity (ft)";
+            // 
+            // DisplayCurrentWaterClarityForBar
+            // 
+            this.DisplayCurrentWaterClarityForBar.BackColor = System.Drawing.SystemColors.Control;
+            this.DisplayCurrentWaterClarityForBar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DisplayCurrentWaterClarityForBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DisplayCurrentWaterClarityForBar.Location = new System.Drawing.Point(12, 223);
+            this.DisplayCurrentWaterClarityForBar.Name = "DisplayCurrentWaterClarityForBar";
+            this.DisplayCurrentWaterClarityForBar.Size = new System.Drawing.Size(103, 15);
+            this.DisplayCurrentWaterClarityForBar.TabIndex = 9;
+            // 
+            // BoatAccessibilityLabel
+            // 
+            this.BoatAccessibilityLabel.AutoSize = true;
+            this.BoatAccessibilityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoatAccessibilityLabel.Location = new System.Drawing.Point(266, 260);
+            this.BoatAccessibilityLabel.Name = "BoatAccessibilityLabel";
+            this.BoatAccessibilityLabel.Size = new System.Drawing.Size(170, 16);
+            this.BoatAccessibilityLabel.TabIndex = 10;
+            this.BoatAccessibilityLabel.Text = "Is There Boat Accessability";
+            // 
+            // YesButton
+            // 
+            this.YesButton.Location = new System.Drawing.Point(269, 292);
+            this.YesButton.Name = "YesButton";
+            this.YesButton.Size = new System.Drawing.Size(61, 40);
+            this.YesButton.TabIndex = 11;
+            this.YesButton.Text = "Yes";
+            this.YesButton.UseVisualStyleBackColor = true;
+            this.YesButton.Click += new System.EventHandler(this.YesButton_Click);
+            // 
+            // NoButton
+            // 
+            this.NoButton.Location = new System.Drawing.Point(375, 292);
+            this.NoButton.Name = "NoButton";
+            this.NoButton.Size = new System.Drawing.Size(61, 40);
+            this.NoButton.TabIndex = 12;
+            this.NoButton.Text = "No";
+            this.NoButton.UseVisualStyleBackColor = true;
+            this.NoButton.Click += new System.EventHandler(this.NoButton_Click);
+            // 
+            // FishThatAreFoundInTheAreaLabel
+            // 
+            this.FishThatAreFoundInTheAreaLabel.AutoSize = true;
+            this.FishThatAreFoundInTheAreaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FishThatAreFoundInTheAreaLabel.Location = new System.Drawing.Point(255, 394);
+            this.FishThatAreFoundInTheAreaLabel.Name = "FishThatAreFoundInTheAreaLabel";
+            this.FishThatAreFoundInTheAreaLabel.Size = new System.Drawing.Size(199, 16);
+            this.FishThatAreFoundInTheAreaLabel.TabIndex = 13;
+            this.FishThatAreFoundInTheAreaLabel.Text = "Fish That Are Found In The Area";
+            // 
+            // ListOfFishTextBox
+            // 
+            this.ListOfFishTextBox.Location = new System.Drawing.Point(12, 425);
+            this.ListOfFishTextBox.Name = "ListOfFishTextBox";
+            this.ListOfFishTextBox.Size = new System.Drawing.Size(685, 20);
+            this.ListOfFishTextBox.TabIndex = 14;
+            this.ListOfFishTextBox.TextChanged += new System.EventHandler(this.ListOfFishTextBox_TextChanged);
+            // 
             // FishingMessageBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(709, 681);
+            this.ClientSize = new System.Drawing.Size(709, 827);
+            this.Controls.Add(this.ListOfFishTextBox);
+            this.Controls.Add(this.FishThatAreFoundInTheAreaLabel);
+            this.Controls.Add(this.NoButton);
+            this.Controls.Add(this.YesButton);
+            this.Controls.Add(this.BoatAccessibilityLabel);
+            this.Controls.Add(this.DisplayCurrentWaterClarityForBar);
+            this.Controls.Add(this.WaterClarityBarLabel);
+            this.Controls.Add(this.WaterClarityBar);
             this.Controls.Add(this.DisplayCurrentDepthForTrackBar);
             this.Controls.Add(this.MaximumWaterDepthLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.WaterDepthBar);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.CreateFishingClass);
             this.Name = "FishingMessageBox";
             this.Text = "FishingMessageBox";
             this.Load += new System.EventHandler(this.FishingMessageBox_Load);
             ((System.ComponentModel.ISupportInitialize)(this.WaterDepthBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WaterClarityBar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button CreateFishingClass;
         private System.Windows.Forms.TrackBar WaterDepthBar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label MaximumWaterDepthLabel;
         private System.Windows.Forms.TextBox DisplayCurrentDepthForTrackBar;
         private System.Windows.Forms.Timer TimerToUpdateDepthBar;
+        private System.Windows.Forms.TrackBar WaterClarityBar;
+        private System.Windows.Forms.Label WaterClarityBarLabel;
+        private System.Windows.Forms.TextBox DisplayCurrentWaterClarityForBar;
+        private System.Windows.Forms.Label BoatAccessibilityLabel;
+        private System.Windows.Forms.Button YesButton;
+        private System.Windows.Forms.Button NoButton;
+        private System.Windows.Forms.Label FishThatAreFoundInTheAreaLabel;
+        private System.Windows.Forms.TextBox ListOfFishTextBox;
     }
 }

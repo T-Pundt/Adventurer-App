@@ -48,7 +48,8 @@ namespace Final_Project
             fishingmessagebox.Visible = false;
             if (fishingmessagebox.ShowDialog() == DialogResult.OK )
             {
-                var data = fishingmessagebox.DataFromFormtwo;
+                var data = fishingmessagebox.StringOfFish;
+                var boataccess = fishingmessagebox.BoatAccessability;
             }
         }
     }
