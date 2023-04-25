@@ -15,7 +15,7 @@ namespace Final_Project
     {
         public string DataFromFormtwo
         {
-            get { return textBox1.Text; }
+            get { return DisplayCurrentDepthForTrackBar.Text; }
         }
 
 
@@ -35,8 +35,16 @@ namespace Final_Project
             this.Close();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void TimerToUpdateDepthBar_Tick(object sender, EventArgs e)
         {
+            if (WaterDepthBar.Value == 100)
+            {
+                DisplayCurrentDepthForTrackBar.Text = ">100";
+            }
+            else
+            {
+                DisplayCurrentDepthForTrackBar.Text = WaterDepthBar.Value.ToString();
+            }
         }
     }
 }

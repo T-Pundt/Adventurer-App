@@ -46,6 +46,7 @@
             this.gmap.AllowDrop = true;
             this.gmap.AutoScroll = true;
             this.gmap.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.gmap.BackColor = System.Drawing.SystemColors.Control;
             this.gmap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.gmap.Bearing = 0F;
             this.gmap.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -156,6 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1493, 762);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
