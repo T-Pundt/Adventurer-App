@@ -98,16 +98,12 @@ namespace Final_Project
         }
 
 
-
-
-        #endregion
-
         private void UploadPictureButton_Click(object sender, EventArgs e)
         {
             UpLoadPictureDialog.Filter = "Image Files (*.bmp;*.jpg;*.png)|*.bmp;*.jpg;*.png";
 
             DialogResult result = UpLoadPictureDialog.ShowDialog();
-            if (result == DialogResult.OK) 
+            if (result == DialogResult.OK)
             {
                 _pictureFileName = UpLoadPictureDialog.FileName;
                 MessageBox.Show("You selected " + _pictureFileName);
@@ -115,5 +111,8 @@ namespace Final_Project
                 DisplaySelectedPictureBox.Image = Image.FromFile(_pictureFileName);
             }
         }
+
+        #endregion
+
     }
 }
