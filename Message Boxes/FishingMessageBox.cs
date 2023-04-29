@@ -36,6 +36,17 @@ namespace Final_Project
             get { return _pictureFileName; }
         }
 
+        public int WaterClarity
+        {
+            get { return WaterClarityBar.Value; }
+        }
+
+        public int WaterDepth
+        {
+            get { return WaterDepthBar.Value; }
+        }
+
+
 
         #endregion
 

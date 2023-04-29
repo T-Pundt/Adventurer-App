@@ -48,9 +48,11 @@ namespace Final_Project
             fishingmessagebox.Visible = false;
             if (fishingmessagebox.ShowDialog() == DialogResult.OK )
             {
-                var data = fishingmessagebox.StringOfFish;
-                var boataccess = fishingmessagebox.BoatAccessability;
-                var FileName = fishingmessagebox.PictureFileName;
+                string _stringOfFish = fishingmessagebox.StringOfFish;
+                bool _boataccess = fishingmessagebox.BoatAccessability;
+                string _fileName = fishingmessagebox.PictureFileName;
+                int _waterDepth = fishingmessagebox.WaterDepth;
+                int _waterClarity = fishingmessagebox.WaterClarity;
 
 
             }
