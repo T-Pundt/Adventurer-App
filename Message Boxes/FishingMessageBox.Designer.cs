@@ -48,6 +48,8 @@
             this.AddAPictureButton = new System.Windows.Forms.Label();
             this.DisplayPictureSelected = new System.Windows.Forms.Label();
             this.DisplaySelectedPictureBox = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.NameOfFishingSpotBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.WaterDepthBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WaterClarityBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DisplaySelectedPictureBox)).BeginInit();
@@ -55,7 +57,7 @@
             // 
             // CreateFishingClass
             // 
-            this.CreateFishingClass.Location = new System.Drawing.Point(592, 612);
+            this.CreateFishingClass.Location = new System.Drawing.Point(595, 785);
             this.CreateFishingClass.Name = "CreateFishingClass";
             this.CreateFishingClass.Size = new System.Drawing.Size(105, 45);
             this.CreateFishingClass.TabIndex = 1;
@@ -226,11 +228,30 @@
             this.DisplaySelectedPictureBox.TabIndex = 18;
             this.DisplaySelectedPictureBox.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(288, 699);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(135, 16);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Name of Fishing Spot";
+            // 
+            // NameOfFishingSpotBox
+            // 
+            this.NameOfFishingSpotBox.Location = new System.Drawing.Point(15, 728);
+            this.NameOfFishingSpotBox.Name = "NameOfFishingSpotBox";
+            this.NameOfFishingSpotBox.Size = new System.Drawing.Size(685, 20);
+            this.NameOfFishingSpotBox.TabIndex = 20;
+            // 
             // FishingMessageBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(709, 668);
+            this.ClientSize = new System.Drawing.Size(709, 846);
+            this.Controls.Add(this.NameOfFishingSpotBox);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.DisplaySelectedPictureBox);
             this.Controls.Add(this.DisplayPictureSelected);
             this.Controls.Add(this.AddAPictureButton);
@@ -279,5 +300,7 @@
         private System.Windows.Forms.Label AddAPictureButton;
         private System.Windows.Forms.Label DisplayPictureSelected;
         private System.Windows.Forms.PictureBox DisplaySelectedPictureBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox NameOfFishingSpotBox;
     }
 }

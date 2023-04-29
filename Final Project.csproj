@@ -255,6 +255,9 @@
     <Compile Include="Adventurer.Designer.cs">
       <DependentUpon>Adventurer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pin Classes\FishingPin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Message Boxes\FishingMessageBox.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -46,6 +46,12 @@ namespace Final_Project
             get { return WaterDepthBar.Value; }
         }
 
+        public string NameOfFishingSpot
+        {
+            get { return NameOfFishingSpotBox.Text; }
+        }
+                   
+
 
 
         #endregion
