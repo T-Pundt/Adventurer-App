@@ -33,8 +33,5 @@ namespace Final_Project
             waterClarity = WaterClarity;
         }
 
-
-
-
     }
 }

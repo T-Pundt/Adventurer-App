@@ -176,8 +176,6 @@
         }
 
         #endregion
-
-        private GMap.NET.WindowsForms.GMapControl gmap;
         private System.Windows.Forms.Timer UpdateCordinatesTimer;
         private System.Windows.Forms.TextBox DisplayCordinate;
         private System.Windows.Forms.Label CurrentCordinatesLabel;
@@ -186,6 +184,7 @@
         private System.Windows.Forms.Button AddClimbingPinButton;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        internal GMap.NET.WindowsForms.GMapControl gmap;
     }
 }
 

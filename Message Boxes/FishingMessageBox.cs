@@ -13,44 +13,55 @@ namespace Final_Project
 {
     public partial class FishingMessageBox : Form
     {
+        #region Variables
 
-        #region Properties
         private bool _boatAccessability = false;
 
         private bool _yesOrNoBoxWasClicked = false;
 
         private string _pictureFileName;
 
-        public string StringOfFish
-        {
-            get { return ListOfFishTextBox.Text; }
-        }
+        FishingPin FP1;
+        FishingPin FP2;
+        FishingPin FP3;
+        FishingPin FP4;
+        FishingPin FP5;
 
-        public bool BoatAccessability
-        {
-            get { return _boatAccessability;}
-        }
 
-        public string PictureFileName
-        {
-            get { return _pictureFileName; }
-        }
+        #endregion
 
-        public int WaterClarity
-        {
-            get { return WaterClarityBar.Value; }
-        }
+        #region Properties
 
-        public int WaterDepth
-        {
-            get { return WaterDepthBar.Value; }
-        }
+        //public string StringOfFish
+        //{
+        //    get { return ListOfFishTextBox.Text; }
+        //}
 
-        public string NameOfFishingSpot
-        {
-            get { return NameOfFishingSpotBox.Text; }
-        }
-                   
+        //public bool BoatAccessability
+        //{
+        //    get { return _boatAccessability;}
+        //}
+
+        //public string PictureFileName
+        //{
+        //    get { return _pictureFileName; }
+        //}
+
+        //public int WaterClarity
+        //{
+        //    get { return WaterClarityBar.Value; }
+        //}
+
+        //public int WaterDepth
+        //{
+        //    get { return WaterDepthBar.Value; }
+        //}
+
+        //public string NameOfFishingSpot
+        //{
+        //    get { return NameOfFishingSpotBox.Text; }
+        //}
+
 
 
 
@@ -110,6 +121,34 @@ namespace Final_Project
 
         private void CreateFishingClass_Clicked(object sender, EventArgs e)
         {
+
+
+                if (FP1 == null)
+                {
+                    FP1 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value);
+                }
+                else if (FP2 == null)
+                {
+                    FP2 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value);
+                }
+                else if (FP3 == null)
+                {
+                    FP3 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value);
+                }
+                else if (FP4 == null)
+                {
+                    FP4 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value);
+                }
+                else if (FP5 == null)
+                {
+                FP5 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value);
+                }
+                else
+                {
+                    MessageBox.Show("There Are Five Fishing Pins on the Map already");
+                    return;
+                }
+
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
