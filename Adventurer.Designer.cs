@@ -37,8 +37,8 @@
             this.AddPinLabel = new System.Windows.Forms.Label();
             this.AddFishingPinButton = new System.Windows.Forms.Button();
             this.AddClimbingPinButton = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.AddSwimmingButton = new System.Windows.Forms.Button();
+            this.AddHikingButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // gmap
@@ -74,6 +74,7 @@
             this.gmap.Size = new System.Drawing.Size(1223, 762);
             this.gmap.TabIndex = 0;
             this.gmap.Zoom = 13D;
+            this.gmap.OnMarkerClick += new GMap.NET.WindowsForms.MarkerClick(this.gmap_OnMarkerClick_1);
             this.gmap.Load += new System.EventHandler(this.gMapControl1_Load);
             // 
             // DisplayCordinate
@@ -133,25 +134,25 @@
             this.AddClimbingPinButton.TabIndex = 5;
             this.AddClimbingPinButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // AddSwimmingButton
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Control;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.Location = new System.Drawing.Point(1236, 208);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 75);
-            this.button2.TabIndex = 7;
-            this.button2.UseVisualStyleBackColor = false;
+            this.AddSwimmingButton.BackColor = System.Drawing.SystemColors.Control;
+            this.AddSwimmingButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddSwimmingButton.BackgroundImage")));
+            this.AddSwimmingButton.Location = new System.Drawing.Point(1236, 208);
+            this.AddSwimmingButton.Name = "AddSwimmingButton";
+            this.AddSwimmingButton.Size = new System.Drawing.Size(75, 75);
+            this.AddSwimmingButton.TabIndex = 7;
+            this.AddSwimmingButton.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // AddHikingButton
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Control;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.Location = new System.Drawing.Point(1406, 208);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 75);
-            this.button3.TabIndex = 8;
-            this.button3.UseVisualStyleBackColor = false;
+            this.AddHikingButton.BackColor = System.Drawing.SystemColors.Control;
+            this.AddHikingButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddHikingButton.BackgroundImage")));
+            this.AddHikingButton.Location = new System.Drawing.Point(1406, 208);
+            this.AddHikingButton.Name = "AddHikingButton";
+            this.AddHikingButton.Size = new System.Drawing.Size(75, 75);
+            this.AddHikingButton.TabIndex = 8;
+            this.AddHikingButton.UseVisualStyleBackColor = false;
             // 
             // Adventurer
             // 
@@ -159,8 +160,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1493, 762);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.AddHikingButton);
+            this.Controls.Add(this.AddSwimmingButton);
             this.Controls.Add(this.AddClimbingPinButton);
             this.Controls.Add(this.AddFishingPinButton);
             this.Controls.Add(this.AddPinLabel);
@@ -182,8 +183,8 @@
         private System.Windows.Forms.Label AddPinLabel;
         private System.Windows.Forms.Button AddFishingPinButton;
         private System.Windows.Forms.Button AddClimbingPinButton;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button AddSwimmingButton;
+        private System.Windows.Forms.Button AddHikingButton;
         internal GMap.NET.WindowsForms.GMapControl gmap;
     }
 }

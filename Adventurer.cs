@@ -18,9 +18,13 @@ namespace Final_Project
     public partial class Adventurer : Form
     {
 
+        #region MessageBoxVariables
+        FishingMessageBox fishingmessagebox = new FishingMessageBox();
+        #endregion
 
 
 
+        #region Initial Load In
 
         public Adventurer()
         {
@@ -40,6 +44,8 @@ namespace Final_Project
             gmap.Zoom = 7;
             gmap.ShowCenter = true;
         }
+        #endregion
+
 
         #region Timer For Cordinates Update
         private void UpdateCordinatesTimer_Tick(object sender, EventArgs e)
@@ -48,54 +54,14 @@ namespace Final_Project
         }
         #endregion
 
+
+        #region Buttons
         private void AddFishingPinButton_Click(object sender, EventArgs e)
         {
-            FishingMessageBox fishingmessagebox = new FishingMessageBox();
+            
             fishingmessagebox.Show();
             fishingmessagebox.Visible = false;
 
-
-
-
-            //if (fishingmessagebox.ShowDialog() == DialogResult.OK )
-            //{
-            //    //send this method to Fishing Message Box
-
-            //    string _stringOfFish = fishingmessagebox.StringOfFish;
-            //    bool _boataccess = fishingmessagebox.BoatAccessability;
-            //    string _fileName = fishingmessagebox.PictureFileName;
-            //    int _waterDepth = fishingmessagebox.WaterDepth;
-            //    int _waterClarity = fishingmessagebox.WaterClarity;
-            //    string _nameOfFishingSpot = fishingmessagebox.NameOfFishingSpot;
-
-            //    if(FP1 == null)
-            //    {
-            //        FP1 = new FishingPin(_nameOfFishingSpot, _stringOfFish, _boataccess, _fileName, _waterDepth, _waterClarity);
-            //    }
-            //    else if(FP2 == null) 
-            //    {
-            //        FP2 = new FishingPin(_nameOfFishingSpot, _stringOfFish, _boataccess, _fileName, _waterDepth, _waterClarity );
-            //    }
-            //    else if (FP3 == null)
-            //    {
-            //        FP3 = new FishingPin(_nameOfFishingSpot, _stringOfFish, _boataccess, _fileName, _waterDepth, _waterClarity);
-            //    }
-            //    else if (FP4 == null)
-            //    {
-            //        FP4 = new FishingPin(_nameOfFishingSpot, _stringOfFish, _boataccess, _fileName, _waterDepth, _waterClarity);
-            //    }
-            //    else if (FP5 == null)
-            //    {
-            //        FP5 = new FishingPin(_nameOfFishingSpot, _stringOfFish, _boataccess, _fileName, _waterDepth, _waterClarity);
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("There Are Five Fishing Pins on the Map already");
-            //        return;
-            //    }
-
-
-            //To here 
 
             if (fishingmessagebox.ShowDialog() == DialogResult.OK)
             {
@@ -105,12 +71,25 @@ namespace Final_Project
                   new GMap.NET.WindowsForms.Markers.GMarkerGoogle(
                       gmap.Position,
                      GMap.NET.WindowsForms.Markers.GMarkerGoogleType.blue_pushpin);
+
+
+                string tag = fishingmessagebox.ItemTag;
+                marker.Tag = tag;
                 markers.Markers.Add(marker);
                 gmap.Overlays.Add(markers);
             }
+        }
+
+        #endregion
 
 
+        //Work On implementation next
+        private void gmap_OnMarkerClick_1(GMapMarker item, MouseEventArgs e)
+        {
+            MessageBox.Show("The class was clicked", (string)item.Tag);
 
+            //if first char of tag starts with F go this branch
+            fishingmessagebox.DisplayPinInformation((string)item.Tag);
 
         }
     }
@@ -120,5 +99,5 @@ namespace Final_Project
 
 
 
-    }
+}
 

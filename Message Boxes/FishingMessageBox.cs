@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,49 +22,22 @@ namespace Final_Project
 
         private string _pictureFileName;
 
+        private string _itemTag;
+
         FishingPin FP1;
         FishingPin FP2;
         FishingPin FP3;
         FishingPin FP4;
         FishingPin FP5;
 
-
         #endregion
 
         #region Properties
 
-        //public string StringOfFish
-        //{
-        //    get { return ListOfFishTextBox.Text; }
-        //}
-
-        //public bool BoatAccessability
-        //{
-        //    get { return _boatAccessability;}
-        //}
-
-        //public string PictureFileName
-        //{
-        //    get { return _pictureFileName; }
-        //}
-
-        //public int WaterClarity
-        //{
-        //    get { return WaterClarityBar.Value; }
-        //}
-
-        //public int WaterDepth
-        //{
-        //    get { return WaterDepthBar.Value; }
-        //}
-
-        //public string NameOfFishingSpot
-        //{
-        //    get { return NameOfFishingSpotBox.Text; }
-        //}
-
-
-
+        public string ItemTag
+        {
+            get { return _itemTag; }
+        }
 
         #endregion
 
@@ -109,7 +83,7 @@ namespace Final_Project
         #region Buttons
         private void YesButton_Click(object sender, EventArgs e)
         {
-           _yesOrNoBoxWasClicked = true;
+            _yesOrNoBoxWasClicked = true;
             _boatAccessability = true;
         }
 
@@ -122,32 +96,42 @@ namespace Final_Project
         private void CreateFishingClass_Clicked(object sender, EventArgs e)
         {
 
-
+            if (NameOfFishingSpotBox.Text != null && ListOfFishTextBox.Text != null && _yesOrNoBoxWasClicked != false && _pictureFileName != null && WaterDepthBar.Value != 0 && WaterClarityBar.Value != 0)
+            {
                 if (FP1 == null)
                 {
                     FP1 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value);
+                    _itemTag = "FP1";
                 }
                 else if (FP2 == null)
                 {
                     FP2 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value);
+                    _itemTag = "FP2";
                 }
                 else if (FP3 == null)
                 {
                     FP3 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value);
+                    _itemTag = "FP3";
                 }
                 else if (FP4 == null)
                 {
                     FP4 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value);
+                    _itemTag = "FP4";
                 }
                 else if (FP5 == null)
                 {
-                FP5 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value);
+                    FP5 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value);
+                    _itemTag = "FP5";
                 }
                 else
                 {
                     MessageBox.Show("There Are Five Fishing Pins on the Map already");
                     return;
                 }
+            }
+            else { throw new Exception("There was atleast one empty field"); }
+
+            ResetValues();
 
             this.DialogResult = DialogResult.OK;
             this.Close();
@@ -168,6 +152,32 @@ namespace Final_Project
             }
         }
 
+        #endregion
+
+        #region Methods
+
+        public void ResetValues()
+        {
+            NameOfFishingSpotBox.Text = null;
+            ListOfFishTextBox.Text = null;
+            _yesOrNoBoxWasClicked = false;
+            _pictureFileName = null;
+            WaterClarityBar.Value = 0;
+            WaterDepthBar.Value = 0;
+            DisplaySelectedPictureBox.Image = null;
+        }
+
+
+
+
+        //Implement this next 
+        public void DisplayPinInformation(string ClassName)
+        {
+ //           ClassName.ReturnTag();
+ //IF className is FP1 call FP1
+ //If ClassName is FP2 call FP2
+ //and so on
+        }
         #endregion
 
     }

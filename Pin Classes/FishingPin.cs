@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Final_Project
 {
@@ -32,6 +33,17 @@ namespace Final_Project
             waterDepth = WaterDepth;
             waterClarity = WaterClarity;
         }
+
+
+        //Do Display Of pin stuff next
+        public int DisplayPinInformation()
+        {
+
+            return 1;
+        
+        }
+
+
 
     }
 }
