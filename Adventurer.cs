@@ -17,13 +17,6 @@ namespace Final_Project
 {
     public partial class Adventurer : Form
     {
-
-        #region MessageBoxVariables
-        FishingMessageBox fishingmessagebox = new FishingMessageBox();
-        #endregion
-
-
-
         #region Initial Load In
 
         public Adventurer()
@@ -47,12 +40,29 @@ namespace Final_Project
         #endregion
 
 
+
+        #region MessageBoxVariables
+        FishingMessageBox fishingmessagebox = new FishingMessageBox();
+        #endregion
+
+
+
+        #region Varibales
+
+        string _stringOfTag;
+        char _firstChar;
+
+        #endregion
+
+
+
         #region Timer For Cordinates Update
         private void UpdateCordinatesTimer_Tick(object sender, EventArgs e)
         {
             DisplayCordinate.Text = gmap.Position.ToString();
         }
         #endregion
+
 
 
         #region Buttons
@@ -83,15 +93,35 @@ namespace Final_Project
         #endregion
 
 
-        //Work On implementation next
+
+        #region EventListeners
         private void gmap_OnMarkerClick_1(GMapMarker item, MouseEventArgs e)
         {
             MessageBox.Show("The class was clicked", (string)item.Tag);
 
-            //if first char of tag starts with F go this branch
-            fishingmessagebox.DisplayPinInformation((string)item.Tag);
+             _stringOfTag = (string)item.Tag;
+             _firstChar = _stringOfTag[0];
 
+            if(_firstChar == 'F') 
+            {
+                fishingmessagebox.DetermineClass(_stringOfTag);
+            }
+            else if(_firstChar == 'S')
+            {
+
+            }
+            else if(_firstChar == 'H')
+            {
+
+            }
+            else if (_firstChar == 'C')
+            {
+
+            }
         }
+
+        #endregion
+
     }
 
 

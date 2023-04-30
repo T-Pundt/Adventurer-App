@@ -171,12 +171,33 @@ namespace Final_Project
 
 
         //Implement this next 
-        public void DisplayPinInformation(string ClassName)
+        public void DetermineClass(string ClassName)
         {
- //           ClassName.ReturnTag();
- //IF className is FP1 call FP1
- //If ClassName is FP2 call FP2
- //and so on
+            if(ClassName == "FP1")
+            {
+                FP1.DisplayPinInformation();
+            }
+            else if(ClassName == "FP2")
+            {
+                FP2.DisplayPinInformation();
+            }
+            else if (ClassName == "FP3")
+            {
+                FP3.DisplayPinInformation();
+            }
+            else if (ClassName == "FP4")
+            {
+                FP4.DisplayPinInformation();
+            }
+            else if (ClassName == "FP5")
+            {
+                FP5.DisplayPinInformation();
+            }
+            else
+            {
+                throw new Exception("Class Not Found");
+            }
+
         }
         #endregion
 
