@@ -42,7 +42,7 @@ namespace Final_Project
 
 
         #region MessageBoxVariables
-        FishingMessageBox fishingmessagebox = new FishingMessageBox();
+       public FishingMessageBox fishingmessagebox = new FishingMessageBox();
         #endregion
 
 

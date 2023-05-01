@@ -100,27 +100,27 @@ namespace Final_Project
             {
                 if (FP1 == null)
                 {
-                    FP1 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value);
+                    FP1 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value, "FP1");
                     _itemTag = "FP1";
                 }
                 else if (FP2 == null)
                 {
-                    FP2 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value);
+                    FP2 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value, "FP2");
                     _itemTag = "FP2";
                 }
                 else if (FP3 == null)
                 {
-                    FP3 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value);
+                    FP3 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value, "FP3");
                     _itemTag = "FP3";
                 }
                 else if (FP4 == null)
                 {
-                    FP4 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value);
+                    FP4 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value, "FP4");
                     _itemTag = "FP4";
                 }
                 else if (FP5 == null)
                 {
-                    FP5 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value);
+                    FP5 = new FishingPin(NameOfFishingSpotBox.Text, ListOfFishTextBox.Text, _boatAccessability, _pictureFileName, WaterDepthBar.Value, WaterClarityBar.Value, "FP5");
                     _itemTag = "FP5";
                 }
                 else
@@ -170,28 +170,27 @@ namespace Final_Project
 
 
 
-        //Implement this next 
         public void DetermineClass(string ClassName)
         {
             if(ClassName == "FP1")
             {
-                FP1.DisplayPinInformation();
+                FP1.DisplayPinInformation("FP1");
             }
             else if(ClassName == "FP2")
             {
-                FP2.DisplayPinInformation();
+               FP2.DisplayPinInformation("FP2");
             }
             else if (ClassName == "FP3")
             {
-                FP3.DisplayPinInformation();
+                FP3.DisplayPinInformation("FP3");
             }
             else if (ClassName == "FP4")
             {
-                FP4.DisplayPinInformation();
+               FP4.DisplayPinInformation("FP4");
             }
             else if (ClassName == "FP5")
             {
-                FP5.DisplayPinInformation();
+                FP5.DisplayPinInformation("FP5");
             }
             else
             {
@@ -199,6 +198,8 @@ namespace Final_Project
             }
 
         }
+
+
         #endregion
 
     }

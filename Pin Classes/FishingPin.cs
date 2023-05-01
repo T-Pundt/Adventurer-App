@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Final_Project
 {
-    internal class FishingPin : Adventurer
+    internal class FishingPin
     {
         #region Variables
         private string _nameOfFishingSpot;
@@ -20,9 +20,20 @@ namespace Final_Project
         private string _pictureFileName;
         private int _waterDepth;
         private int _waterClarity;
+        private string _classname;
         #endregion
 
         #region Properties
+
+        public string ClassName
+        {
+            get { return _classname; }
+
+            set
+            {
+                _classname = value;
+            }
+        }
 
         public string NameOfFishingSpot
         {
@@ -101,11 +112,9 @@ namespace Final_Project
 
         #endregion
 
-
-
-
+        #region Constructor
         //Construtctor
-        public FishingPin(string nameOfFishingSpot, string stringOfFish, bool boatAccess, string pictureFileName, int waterDepth, int waterClarity)
+        public FishingPin(string nameOfFishingSpot, string stringOfFish, bool boatAccess, string pictureFileName, int waterDepth, int waterClarity, string className)
         {
             NameOfFishingSpot = nameOfFishingSpot;
             StringOfFish = stringOfFish;
@@ -113,18 +122,26 @@ namespace Final_Project
             PictureFileName = pictureFileName;
             WaterDepth = waterDepth;
             WaterClarity = waterClarity;
+            ClassName = className;
         }
 
+        #endregion
 
-        //Do Display Of pin stuff next
-        public int DisplayPinInformation()
+        #region Methods
+        public void DisplayPinInformation(string ClassName)
         {
-            
-            return 1;
-        
+            DisplayFishingInformationForm displayFishingInformation = new DisplayFishingInformationForm();
+            displayFishingInformation.WaterClarity = WaterClarity;
+            displayFishingInformation.WaterDepth = WaterDepth;
+            displayFishingInformation.StringOfFish = StringOfFish;
+            displayFishingInformation.NameOfFishingSpot = NameOfFishingSpot;
+            displayFishingInformation.BoatAccess = BoatAccess;
+            displayFishingInformation.PictureFileName = PictureFileName;
+            displayFishingInformation.ClassName = ClassName;
+            displayFishingInformation.Show();
+
         }
-
-
+        #endregion
 
     }
 }
