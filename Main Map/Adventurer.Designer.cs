@@ -154,6 +154,7 @@
             this.AddHikingButton.Size = new System.Drawing.Size(75, 75);
             this.AddHikingButton.TabIndex = 8;
             this.AddHikingButton.UseVisualStyleBackColor = false;
+            this.AddHikingButton.Click += new System.EventHandler(this.AddHikingButton_Click);
             // 
             // Adventurer
             // 

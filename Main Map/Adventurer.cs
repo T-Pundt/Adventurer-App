@@ -114,14 +114,20 @@ namespace Final_Project
             }
         }
 
+        private void AddHikingButton_Click(object sender, EventArgs e)
+        {
+
+        }
 
 
-            #endregion
+
+
+        #endregion
 
 
 
         #region EventListeners
-            private void gmap_OnMarkerClick_1(GMapMarker item, MouseEventArgs e)
+        private void gmap_OnMarkerClick_1(GMapMarker item, MouseEventArgs e)
         {
              _stringOfTag = (string)item.Tag;
              _firstChar = _stringOfTag[0];
@@ -146,6 +152,7 @@ namespace Final_Project
 
         #endregion
 
+        
     }
 
 

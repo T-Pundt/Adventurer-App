@@ -249,6 +249,13 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pin Classes\HikingPin.cs" />
+    <Compile Include="Message Boxes\HikingMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message Boxes\HikingMessageBox.Designer.cs">
+      <DependentUpon>HikingMessageBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main Map\Adventurer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -283,6 +290,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Message Boxes\HikingMessageBox.resx">
+      <DependentUpon>HikingMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main Map\Adventurer.resx">
       <DependentUpon>Adventurer.cs</DependentUpon>
     </EmbeddedResource>
