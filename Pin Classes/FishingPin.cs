@@ -113,7 +113,6 @@ namespace Final_Project
         #endregion
 
         #region Constructor
-        //Construtctor
         public FishingPin(string nameOfFishingSpot, string stringOfFish, bool boatAccess, string pictureFileName, int waterDepth, int waterClarity, string className)
         {
             NameOfFishingSpot = nameOfFishingSpot;

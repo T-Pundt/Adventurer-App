@@ -42,7 +42,8 @@ namespace Final_Project
 
 
         #region MessageBoxVariables
-       public FishingMessageBox fishingmessagebox = new FishingMessageBox();
+        public FishingMessageBox fishingmessagebox = new FishingMessageBox();
+        public SwimmingMessageBox swimmingmessagebox = new SwimmingMessageBox();
         #endregion
 
 
@@ -90,15 +91,38 @@ namespace Final_Project
             }
         }
 
-        #endregion
-
-
-
-        #region EventListeners
-        private void gmap_OnMarkerClick_1(GMapMarker item, MouseEventArgs e)
+        private void AddSwimmingButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("The class was clicked", (string)item.Tag);
+            swimmingmessagebox.Show();
+            swimmingmessagebox.Visible = false;
 
+
+            if (swimmingmessagebox.ShowDialog() == DialogResult.OK)
+            {
+
+                GMapOverlay markers = new GMapOverlay("markers");
+                GMapMarker marker =
+                  new GMap.NET.WindowsForms.Markers.GMarkerGoogle(
+                      gmap.Position,
+                     GMap.NET.WindowsForms.Markers.GMarkerGoogleType.lightblue_pushpin);
+
+
+                string tag = swimmingmessagebox.ItemTag;
+                marker.Tag = tag;
+                markers.Markers.Add(marker);
+                gmap.Overlays.Add(markers);
+            }
+        }
+
+
+
+            #endregion
+
+
+
+            #region EventListeners
+            private void gmap_OnMarkerClick_1(GMapMarker item, MouseEventArgs e)
+        {
              _stringOfTag = (string)item.Tag;
              _firstChar = _stringOfTag[0];
 
@@ -108,7 +132,7 @@ namespace Final_Project
             }
             else if(_firstChar == 'S')
             {
-
+                swimmingmessagebox.DetermineClass(_stringOfTag);
             }
             else if(_firstChar == 'H')
             {

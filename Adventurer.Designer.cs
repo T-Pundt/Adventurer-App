@@ -143,6 +143,7 @@
             this.AddSwimmingButton.Size = new System.Drawing.Size(75, 75);
             this.AddSwimmingButton.TabIndex = 7;
             this.AddSwimmingButton.UseVisualStyleBackColor = false;
+            this.AddSwimmingButton.Click += new System.EventHandler(this.AddSwimmingButton_Click);
             // 
             // AddHikingButton
             // 

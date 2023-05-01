@@ -124,7 +124,7 @@
   <data name="AddFishingPinButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEsAAABMCAYAAAAlS0pSAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAACwZJREFUeF7tW2lsFdcVNktCSQA/L8/G++5nYzWpwJAEs0ltCIuBpGFpoFAqgYNZ
+        vAAADrwBlbxySQAACwZJREFUeF7tW2lsFdcVNktCSQA/L8/G++5nYzWpwJAEs0ltCIuBpGFpoFAqgYNZ
         2ibQUCmBJGAwFGNag1kiHFCjECBNEFClDQ0FQgFBRSogNGwRAtUIfhQkBBgbw+n9zps7vjO+tsfbs98z
         R/o0c5eZd8/3zj333GWCKioq6DGc4TFZjYCWrIcPH9bKewwNWZBjx47x1V7W0WEhCzJ08CDqFBREhw4d
         5LRa3tFRi6ySkj9SiCuYwkJD6ObN/z3ukgq03fCt3y6gcEFWpied05WVlZY6HRVaBw+ZMGE8W9e4cWM5
@@ -177,7 +177,7 @@
   <data name="AddClimbingPinButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAIAAAC3LO29AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAACXhJREFUeF7tmmtMj28Yx/Mn52MoKodZjsOUZs5bWRjDGGtOYVlzNiPzxuGF0Urz
+        vQAADr0BR/uQrQAACXhJREFUeF7tmmtMj28Yx/Mn52MoKodZjsOUZs5bWRjDGGtOYVlzNiPzxuGF0Urz
         Bi9yCG2YCZPDHGIsC60ZIjNZwhglyfmvf/+P53p27xn1+/0891P5Wd8Xz67rfu77cX3v63Tfv/hU/u2o
         Z+j9qGfo/ahn6P2oZ+j9qHGG/xr4zwDCt2/fCgsLt2zZ0qNHDx8fH19fX56NGzceNGhQfHz8q1ev1KqK
         igqRNVFLPoTex48fr1271qZNGyg1bdq0QYMGCOAfAyIDJty5c+f79+9ewBAreZ45c6Zbt25ifYsWLXDX
@@ -223,7 +223,7 @@
   <data name="AddSwimmingButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAYAAAA4TnrqAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAACQxJREFUeF7tWmlsFVUU7lvaQin6A2kjtK7gj1IDiCAi0QhCZWlQjLIl+kOKuDSm
+        vgAADr4B6kKxwAAACQxJREFUeF7tWmlsFVUU7lvaQin6A2kjtK7gj1IDiCAi0QhCZWlQjLIl+kOKuDSm
         kPBDQIVfxK0GIRFJ2Iwgilj+KBqgCdEE6AJqoQtKQCQhEFkCpdDter9z75l333Tm9U15vNYyX/J1XmfO
         OXPvN+eeuXdmUoSPuOGL5QG+WB7gi+UBvlge4IvlAb5YHuCL5QG+WB7gi+UBvlge4IvlAb5YHuCL5QH/
         S7Ha29uJycb/Qqzy8nKxZMkSsWLFClFfX6/3Jh89UizOmrNnz4qHhg4VKSkpUSyaX0THk51hPTazVq5c
@@ -268,7 +268,7 @@
   <data name="AddHikingButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAYAAAA4TnrqAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAC4xJREFUeF7tnHtwVcUdx5PcexMBBUICSlMVqbRT3q8pDA4S0EopJRFLKSAE/mqB
+        vgAADr4B6kKxwAAAC4xJREFUeF7tnHtwVcUdx5PcexMBBUICSlMVqbRT3q8pDA4S0EopJRFLKSAE/mqB
         wFDqtMijIC+RJEoHBQTTgEGhAdvi0EKJD4QSUpFH5WUYa8dSCLQ8CpQZAXPvdr+/3d+5ey8nN7m559wb
         nHxnfnPO+e1vD7uf7O7Z3XMuSaJJ9VYTrCjUBCsKNcGKQncMrEAgoM8Sp0YHa1p+vmjRooVISkoS6enp
         Yvbs2Tol8Uo4LG4xly5dIkBsycZ5ms8rbt28SXEyhz7GX4mHpSvv83gJkEeaN1kd2QAs6957KS4Q+JKO

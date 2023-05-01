@@ -270,7 +270,7 @@
             this.Controls.Add(this.WaterDepthBar);
             this.Controls.Add(this.CreateFishingClass);
             this.Name = "FishingMessageBox";
-            this.Text = "FishingMessageBox";
+            this.Text = "Create New Fishing Pin";
             this.Load += new System.EventHandler(this.FishingMessageBox_Load);
             ((System.ComponentModel.ISupportInitialize)(this.WaterDepthBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WaterClarityBar)).EndInit();

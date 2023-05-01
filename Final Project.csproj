@@ -255,11 +255,24 @@
     <Compile Include="Adventurer.Designer.cs">
       <DependentUpon>Adventurer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pin Classes\SwimmingPin.cs" />
     <Compile Include="Display Information Classes\DisplayFishingInformationForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Display Information Classes\DisplayFishingInformationForm.Designer.cs">
       <DependentUpon>DisplayFishingInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message Boxes\Swimming Message Box.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message Boxes\Swimming Message Box.Designer.cs">
+      <DependentUpon>Swimming Message Box.cs</DependentUpon>
     </Compile>
     <Compile Include="Pin Classes\FishingPin.cs" />
     <Compile Include="Message Boxes\FishingMessageBox.cs">
@@ -275,6 +288,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Display Information Classes\DisplayFishingInformationForm.resx">
       <DependentUpon>DisplayFishingInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message Boxes\Swimming Message Box.resx">
+      <DependentUpon>Swimming Message Box.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Message Boxes\FishingMessageBox.resx">
       <DependentUpon>FishingMessageBox.cs</DependentUpon>
