@@ -119,8 +119,15 @@ namespace Final_Project
         #region Methods
         public void DisplayPinInformation(string ClassName)
         {
-        
-
+            DisplayHikingPinInformation displayhikinginformation = new DisplayHikingPinInformation();
+            displayhikinginformation.ClassName = ClassName;
+            displayhikinginformation.PictureFileName = PictureFileName;
+            displayhikinginformation.BugLevel = BugLevel;
+            displayhikinginformation.HikeDifficulty = HikeDifficulty;
+            displayhikinginformation.HikeDistance = HikeDistance;
+            displayhikinginformation.NumberOfOverlooks = NumberOfOverLooks;
+            displayhikinginformation.NameOfHikingSpot = NameOfHikingSpot;
+            displayhikinginformation.Show();
         }
         #endregion
     }

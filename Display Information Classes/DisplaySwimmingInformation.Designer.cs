@@ -75,7 +75,7 @@
             // 
             this.WaterClarityDisplayTextBox.AutoSize = true;
             this.WaterClarityDisplayTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WaterClarityDisplayTextBox.Location = new System.Drawing.Point(56, 151);
+            this.WaterClarityDisplayTextBox.Location = new System.Drawing.Point(12, 151);
             this.WaterClarityDisplayTextBox.Name = "WaterClarityDisplayTextBox";
             this.WaterClarityDisplayTextBox.Size = new System.Drawing.Size(83, 16);
             this.WaterClarityDisplayTextBox.TabIndex = 6;
@@ -96,7 +96,7 @@
             // 
             this.SwimmingDisplayWaterDepthText.AutoSize = true;
             this.SwimmingDisplayWaterDepthText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SwimmingDisplayWaterDepthText.Location = new System.Drawing.Point(56, 223);
+            this.SwimmingDisplayWaterDepthText.Location = new System.Drawing.Point(12, 223);
             this.SwimmingDisplayWaterDepthText.Name = "SwimmingDisplayWaterDepthText";
             this.SwimmingDisplayWaterDepthText.Size = new System.Drawing.Size(83, 16);
             this.SwimmingDisplayWaterDepthText.TabIndex = 8;

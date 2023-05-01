@@ -72,7 +72,7 @@
             // 
             this.WaterClarityDisplayTextBox.AutoSize = true;
             this.WaterClarityDisplayTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WaterClarityDisplayTextBox.Location = new System.Drawing.Point(54, 142);
+            this.WaterClarityDisplayTextBox.Location = new System.Drawing.Point(9, 143);
             this.WaterClarityDisplayTextBox.Name = "WaterClarityDisplayTextBox";
             this.WaterClarityDisplayTextBox.Size = new System.Drawing.Size(83, 16);
             this.WaterClarityDisplayTextBox.TabIndex = 2;
@@ -93,7 +93,7 @@
             this.BoatAccessLabel.AutoSize = true;
             this.BoatAccessLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.BoatAccessLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoatAccessLabel.Location = new System.Drawing.Point(30, 194);
+            this.BoatAccessLabel.Location = new System.Drawing.Point(9, 194);
             this.BoatAccessLabel.Name = "BoatAccessLabel";
             this.BoatAccessLabel.Size = new System.Drawing.Size(85, 18);
             this.BoatAccessLabel.TabIndex = 4;
@@ -103,7 +103,7 @@
             // 
             this.DisplayBoatAccessabilityText.AutoSize = true;
             this.DisplayBoatAccessabilityText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayBoatAccessabilityText.Location = new System.Drawing.Point(54, 222);
+            this.DisplayBoatAccessabilityText.Location = new System.Drawing.Point(9, 222);
             this.DisplayBoatAccessabilityText.Name = "DisplayBoatAccessabilityText";
             this.DisplayBoatAccessabilityText.Size = new System.Drawing.Size(83, 16);
             this.DisplayBoatAccessabilityText.TabIndex = 5;
@@ -114,7 +114,7 @@
             this.WaterDepthDisplayLabel.AutoSize = true;
             this.WaterDepthDisplayLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.WaterDepthDisplayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WaterDepthDisplayLabel.Location = new System.Drawing.Point(30, 283);
+            this.WaterDepthDisplayLabel.Location = new System.Drawing.Point(9, 272);
             this.WaterDepthDisplayLabel.Name = "WaterDepthDisplayLabel";
             this.WaterDepthDisplayLabel.Size = new System.Drawing.Size(81, 18);
             this.WaterDepthDisplayLabel.TabIndex = 6;
@@ -124,7 +124,7 @@
             // 
             this.DisplayWaterDepthText.AutoSize = true;
             this.DisplayWaterDepthText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayWaterDepthText.Location = new System.Drawing.Point(54, 312);
+            this.DisplayWaterDepthText.Location = new System.Drawing.Point(9, 299);
             this.DisplayWaterDepthText.Name = "DisplayWaterDepthText";
             this.DisplayWaterDepthText.Size = new System.Drawing.Size(83, 16);
             this.DisplayWaterDepthText.TabIndex = 7;
@@ -135,7 +135,7 @@
             this.FishInTheAreaLabel.AutoSize = true;
             this.FishInTheAreaLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.FishInTheAreaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FishInTheAreaLabel.Location = new System.Drawing.Point(21, 372);
+            this.FishInTheAreaLabel.Location = new System.Drawing.Point(9, 351);
             this.FishInTheAreaLabel.Name = "FishInTheAreaLabel";
             this.FishInTheAreaLabel.Size = new System.Drawing.Size(106, 18);
             this.FishInTheAreaLabel.TabIndex = 8;
@@ -145,7 +145,7 @@
             // 
             this.DisplayFishInTheAreaText.AutoSize = true;
             this.DisplayFishInTheAreaText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayFishInTheAreaText.Location = new System.Drawing.Point(27, 400);
+            this.DisplayFishInTheAreaText.Location = new System.Drawing.Point(9, 378);
             this.DisplayFishInTheAreaText.Name = "DisplayFishInTheAreaText";
             this.DisplayFishInTheAreaText.Size = new System.Drawing.Size(83, 16);
             this.DisplayFishInTheAreaText.TabIndex = 9;
@@ -154,7 +154,7 @@
             // CloseWindowButton
             // 
             this.CloseWindowButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CloseWindowButton.Location = new System.Drawing.Point(252, 458);
+            this.CloseWindowButton.Location = new System.Drawing.Point(252, 418);
             this.CloseWindowButton.Name = "CloseWindowButton";
             this.CloseWindowButton.Size = new System.Drawing.Size(84, 41);
             this.CloseWindowButton.TabIndex = 10;
@@ -166,7 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 511);
+            this.ClientSize = new System.Drawing.Size(348, 471);
             this.Controls.Add(this.CloseWindowButton);
             this.Controls.Add(this.DisplayFishInTheAreaText);
             this.Controls.Add(this.FishInTheAreaLabel);

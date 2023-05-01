@@ -75,7 +75,7 @@ namespace Final_Project
                 }
                 else
                 {
-                    MessageBox.Show("There Are Five Swimming Pins on the Map already");
+                    MessageBox.Show("There Are Five Hiking Pins on the Map already");
                     return;
                 }
             }
