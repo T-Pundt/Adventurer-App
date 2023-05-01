@@ -104,7 +104,14 @@ namespace Final_Project
         #region Methods
         public void DisplayPinInformation(string ClassName)
         {
-        
+            DisplaySwimmingInformation displaySwimmingInformation = new DisplaySwimmingInformation();
+            displaySwimmingInformation.WaterClarity = WaterClarity;
+            displaySwimmingInformation.WaterDepth = WaterDepth;
+            displaySwimmingInformation.WaterPolution = PolutionLevel;
+            displaySwimmingInformation.NameOfSwimmingSpot = NameOfSwimmingSpot;
+            displaySwimmingInformation.PictureFileName = PictureFileName;
+            displaySwimmingInformation.ClassName = ClassName;
+            displaySwimmingInformation.Show();
 
         }
         #endregion

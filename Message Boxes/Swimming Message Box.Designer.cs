@@ -85,6 +85,7 @@
             // 
             // UpdateSwimmingMessageBoxTimer
             // 
+            this.UpdateSwimmingMessageBoxTimer.Enabled = true;
             this.UpdateSwimmingMessageBoxTimer.Interval = 50;
             this.UpdateSwimmingMessageBoxTimer.Tick += new System.EventHandler(this.UpdateSwimmingMessageBoxTimer_Tick);
             // 
@@ -204,7 +205,7 @@
             // 
             // SwimmingCreateSwimmingClassButton
             // 
-            this.SwimmingCreateSwimmingClassButton.Location = new System.Drawing.Point(593, 758);
+            this.SwimmingCreateSwimmingClassButton.Location = new System.Drawing.Point(595, 725);
             this.SwimmingCreateSwimmingClassButton.Name = "SwimmingCreateSwimmingClassButton";
             this.SwimmingCreateSwimmingClassButton.Size = new System.Drawing.Size(105, 45);
             this.SwimmingCreateSwimmingClassButton.TabIndex = 21;
@@ -220,7 +221,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(710, 815);
+            this.ClientSize = new System.Drawing.Size(710, 782);
             this.Controls.Add(this.SwimmingCreateSwimmingClassButton);
             this.Controls.Add(this.SwimmingDisplayPictureSelectedLabel);
             this.Controls.Add(this.SwimmingDisplaySelectedPictureBox);

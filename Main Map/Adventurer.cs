@@ -120,7 +120,7 @@ namespace Final_Project
 
 
 
-            #region EventListeners
+        #region EventListeners
             private void gmap_OnMarkerClick_1(GMapMarker item, MouseEventArgs e)
         {
              _stringOfTag = (string)item.Tag;

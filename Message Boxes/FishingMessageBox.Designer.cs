@@ -123,9 +123,9 @@
             this.WaterClarityBarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WaterClarityBarLabel.Location = new System.Drawing.Point(298, 137);
             this.WaterClarityBarLabel.Name = "WaterClarityBarLabel";
-            this.WaterClarityBarLabel.Size = new System.Drawing.Size(100, 16);
+            this.WaterClarityBarLabel.Size = new System.Drawing.Size(106, 16);
             this.WaterClarityBarLabel.TabIndex = 8;
-            this.WaterClarityBarLabel.Text = "Water Clarity (ft)";
+            this.WaterClarityBarLabel.Text = "Water Clarity ( ft )";
             // 
             // DisplayCurrentWaterClarityForBar
             // 

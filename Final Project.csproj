@@ -249,17 +249,17 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adventurer.cs">
+    <Compile Include="Main Map\Adventurer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Adventurer.Designer.cs">
+    <Compile Include="Main Map\Adventurer.Designer.cs">
       <DependentUpon>Adventurer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Display Information Classes\DisplaySwimmingInformation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Display Information Classes\DisplaySwimmingInformation.Designer.cs">
+      <DependentUpon>DisplaySwimmingInformation.cs</DependentUpon>
     </Compile>
     <Compile Include="Pin Classes\SwimmingPin.cs" />
     <Compile Include="Display Information Classes\DisplayFishingInformationForm.cs">
@@ -283,14 +283,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Adventurer.resx">
+    <EmbeddedResource Include="Main Map\Adventurer.resx">
       <DependentUpon>Adventurer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Display Information Classes\DisplayFishingInformationForm.resx">
       <DependentUpon>DisplayFishingInformationForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Display Information Classes\DisplaySwimmingInformation.resx">
+      <DependentUpon>DisplaySwimmingInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Message Boxes\Swimming Message Box.resx">
       <DependentUpon>Swimming Message Box.cs</DependentUpon>

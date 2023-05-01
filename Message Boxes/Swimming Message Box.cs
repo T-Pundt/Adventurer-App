@@ -46,13 +46,12 @@ namespace Final_Project
         private void UpdateSwimmingMessageBoxTimer_Tick(object sender, EventArgs e)
         {
             SwimmingWaterDepthText.Text = SwimmingWaterDepthBar.Value.ToString();
-            SwimmingwaterPolutionLevelText.Text = SwimmingWaterPolutionLevelBar.Value.ToString();
             SwimmingWaterClarityText.Text = SwimmingWaterClarityBar.Value.ToString();
-
+            if(SwimmingWaterPolutionLevelBar.Value == 0) { SwimmingwaterPolutionLevelText.Text = "None"; }
+            else if(SwimmingWaterPolutionLevelBar.Value == 1) { SwimmingwaterPolutionLevelText.Text = "Low"; }
+            else if (SwimmingWaterPolutionLevelBar.Value == 2) { SwimmingwaterPolutionLevelText.Text = "Medium"; }
+            else if (SwimmingWaterPolutionLevelBar.Value == 3) { SwimmingwaterPolutionLevelText.Text = "High"; }
         }
-
-
-
         #endregion
 
         #region Buttons
@@ -73,7 +72,7 @@ namespace Final_Project
 
         private void SwimmingCreateSwimmingClassButton_Click(object sender, EventArgs e)
         {
-            if (SwimmingWaterClarityBar.Value != 0 && SwimmingWaterDepthBar.Value != 0 && _pictureFileName != null && SwimmingNameOfSpotTextBox.Text != null && SwimmingWaterPolutionLevelBar.Value != 0)
+            if (SwimmingWaterClarityBar.Value != 0 && SwimmingWaterDepthBar.Value != 0 && _pictureFileName != null && SwimmingNameOfSpotTextBox.Text != null)
             {
                 if(SP1 == null) 
                 {
@@ -90,12 +89,12 @@ namespace Final_Project
                     SP3 = new SwimmingPin(SwimmingNameOfSpotTextBox.Text, SwimmingWaterPolutionLevelBar.Value, _pictureFileName, SwimmingWaterDepthBar.Value, SwimmingWaterClarityBar.Value, "SP3");
                     _itemTag = "SP3";
                 }
-                else if (SP2 == null)
+                else if (SP4 == null)
                 {
                     SP4 = new SwimmingPin(SwimmingNameOfSpotTextBox.Text, SwimmingWaterPolutionLevelBar.Value, _pictureFileName, SwimmingWaterDepthBar.Value, SwimmingWaterClarityBar.Value, "SP4");
                     _itemTag = "SP4";
                 }
-                else if (SP2 == null)
+                else if (SP5 == null)
                 {
                     SP5 = new SwimmingPin(SwimmingNameOfSpotTextBox.Text, SwimmingWaterPolutionLevelBar.Value, _pictureFileName, SwimmingWaterDepthBar.Value, SwimmingWaterClarityBar.Value, "SP5");
                     _itemTag = "SP5";
@@ -126,7 +125,7 @@ namespace Final_Project
 
         public void ResetValues()
         {
-            SwimmingNameOfSpotTextBox = null;
+            SwimmingNameOfSpotTextBox.Text = null;
             SwimmingWaterPolutionLevelBar.Value = 0;           
             _pictureFileName = null;
             SwimmingWaterClarityBar.Value = 0;
