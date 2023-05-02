@@ -35,8 +35,8 @@
             this.DisplayClimbingDistanceText = new System.Windows.Forms.Label();
             this.DisplayRouteDifficultyLabel = new System.Windows.Forms.Label();
             this.DisplayRouteDifficultyText = new System.Windows.Forms.Label();
-            this.DisplayClimbingTypeOfRock = new System.Windows.Forms.Label();
-            this.DispalyClimbingTypeOfRockText = new System.Windows.Forms.Label();
+            this.DisplayClimbingTypeOfRockLabel = new System.Windows.Forms.Label();
+            this.DisplayClimbingTypeOfRockText = new System.Windows.Forms.Label();
             this.DisplayClimbingDegreeOfRouteLabel = new System.Windows.Forms.Label();
             this.DisplayClimbingDegreeOfRouteText = new System.Windows.Forms.Label();
             this.CloseWindowButton = new System.Windows.Forms.Button();
@@ -104,26 +104,26 @@
             this.DisplayRouteDifficultyText.TabIndex = 10;
             this.DisplayRouteDifficultyText.Text = "PlaceHolder";
             // 
-            // DisplayClimbingTypeOfRock
+            // DisplayClimbingTypeOfRockLabel
             // 
-            this.DisplayClimbingTypeOfRock.AutoSize = true;
-            this.DisplayClimbingTypeOfRock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DisplayClimbingTypeOfRock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayClimbingTypeOfRock.Location = new System.Drawing.Point(12, 245);
-            this.DisplayClimbingTypeOfRock.Name = "DisplayClimbingTypeOfRock";
-            this.DisplayClimbingTypeOfRock.Size = new System.Drawing.Size(92, 18);
-            this.DisplayClimbingTypeOfRock.TabIndex = 11;
-            this.DisplayClimbingTypeOfRock.Text = "Type Of Rock";
+            this.DisplayClimbingTypeOfRockLabel.AutoSize = true;
+            this.DisplayClimbingTypeOfRockLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DisplayClimbingTypeOfRockLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DisplayClimbingTypeOfRockLabel.Location = new System.Drawing.Point(12, 245);
+            this.DisplayClimbingTypeOfRockLabel.Name = "DisplayClimbingTypeOfRockLabel";
+            this.DisplayClimbingTypeOfRockLabel.Size = new System.Drawing.Size(92, 18);
+            this.DisplayClimbingTypeOfRockLabel.TabIndex = 11;
+            this.DisplayClimbingTypeOfRockLabel.Text = "Type Of Rock";
             // 
-            // DispalyClimbingTypeOfRockText
+            // DisplayClimbingTypeOfRockText
             // 
-            this.DispalyClimbingTypeOfRockText.AutoSize = true;
-            this.DispalyClimbingTypeOfRockText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DispalyClimbingTypeOfRockText.Location = new System.Drawing.Point(9, 272);
-            this.DispalyClimbingTypeOfRockText.Name = "DispalyClimbingTypeOfRockText";
-            this.DispalyClimbingTypeOfRockText.Size = new System.Drawing.Size(83, 16);
-            this.DispalyClimbingTypeOfRockText.TabIndex = 12;
-            this.DispalyClimbingTypeOfRockText.Text = "PlaceHolder";
+            this.DisplayClimbingTypeOfRockText.AutoSize = true;
+            this.DisplayClimbingTypeOfRockText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DisplayClimbingTypeOfRockText.Location = new System.Drawing.Point(9, 272);
+            this.DisplayClimbingTypeOfRockText.Name = "DisplayClimbingTypeOfRockText";
+            this.DisplayClimbingTypeOfRockText.Size = new System.Drawing.Size(83, 16);
+            this.DisplayClimbingTypeOfRockText.TabIndex = 12;
+            this.DisplayClimbingTypeOfRockText.Text = "PlaceHolder";
             // 
             // DisplayClimbingDegreeOfRouteLabel
             // 
@@ -159,6 +159,7 @@
             // 
             // DisplayClimbingInformationUpdateValues
             // 
+            this.DisplayClimbingInformationUpdateValues.Enabled = true;
             this.DisplayClimbingInformationUpdateValues.Tick += new System.EventHandler(this.DisplayClimbingInformationUpdateValues_Tick);
             // 
             // DisplayClimbingPinInformation
@@ -169,8 +170,8 @@
             this.Controls.Add(this.CloseWindowButton);
             this.Controls.Add(this.DisplayClimbingDegreeOfRouteText);
             this.Controls.Add(this.DisplayClimbingDegreeOfRouteLabel);
-            this.Controls.Add(this.DispalyClimbingTypeOfRockText);
-            this.Controls.Add(this.DisplayClimbingTypeOfRock);
+            this.Controls.Add(this.DisplayClimbingTypeOfRockText);
+            this.Controls.Add(this.DisplayClimbingTypeOfRockLabel);
             this.Controls.Add(this.DisplayRouteDifficultyText);
             this.Controls.Add(this.DisplayRouteDifficultyLabel);
             this.Controls.Add(this.DisplayClimbingDistanceText);
@@ -193,8 +194,8 @@
         private System.Windows.Forms.Label DisplayClimbingDistanceText;
         private System.Windows.Forms.Label DisplayRouteDifficultyLabel;
         private System.Windows.Forms.Label DisplayRouteDifficultyText;
-        private System.Windows.Forms.Label DisplayClimbingTypeOfRock;
-        private System.Windows.Forms.Label DispalyClimbingTypeOfRockText;
+        private System.Windows.Forms.Label DisplayClimbingTypeOfRockLabel;
+        private System.Windows.Forms.Label DisplayClimbingTypeOfRockText;
         private System.Windows.Forms.Label DisplayClimbingDegreeOfRouteLabel;
         private System.Windows.Forms.Label DisplayClimbingDegreeOfRouteText;
         private System.Windows.Forms.Button CloseWindowButton;

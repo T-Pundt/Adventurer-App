@@ -47,7 +47,7 @@ namespace Final_Project
         {
             ClimbingPictureOfArea.Image = Image.FromFile(PictureFileName);
             DisplayNameOfClimbingRouteText.Text = NameOfClimbingRoute;
-            DisplayClimbingTypeOfRock.Text = TypeOfRock;
+            DisplayClimbingTypeOfRockText.Text = TypeOfRock;
             DisplayClimbingDegreeOfRouteText.Text = DegreeOfRoute.ToString();
             DisplayRouteDifficultyText.Text = RouteDifficulty.ToString();
             DisplayClimbingDistanceText.Text = RouteDistance.ToString();

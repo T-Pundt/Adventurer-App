@@ -39,6 +39,10 @@
             this.AddClimbingPinButton = new System.Windows.Forms.Button();
             this.AddSwimmingButton = new System.Windows.Forms.Button();
             this.AddHikingButton = new System.Windows.Forms.Button();
+            this.MainMapFishingLabel = new System.Windows.Forms.Label();
+            this.MainMapClimbingLabel = new System.Windows.Forms.Label();
+            this.MainMapSwimmingLabel = new System.Windows.Forms.Label();
+            this.MainMapHikingLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // gmap
@@ -157,12 +161,60 @@
             this.AddHikingButton.UseVisualStyleBackColor = false;
             this.AddHikingButton.Click += new System.EventHandler(this.AddHikingButton_Click);
             // 
+            // MainMapFishingLabel
+            // 
+            this.MainMapFishingLabel.AutoSize = true;
+            this.MainMapFishingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MainMapFishingLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.MainMapFishingLabel.Location = new System.Drawing.Point(1249, 124);
+            this.MainMapFishingLabel.Name = "MainMapFishingLabel";
+            this.MainMapFishingLabel.Size = new System.Drawing.Size(50, 16);
+            this.MainMapFishingLabel.TabIndex = 9;
+            this.MainMapFishingLabel.Text = "Fishing";
+            // 
+            // MainMapClimbingLabel
+            // 
+            this.MainMapClimbingLabel.AutoSize = true;
+            this.MainMapClimbingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MainMapClimbingLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.MainMapClimbingLabel.Location = new System.Drawing.Point(1412, 124);
+            this.MainMapClimbingLabel.Name = "MainMapClimbingLabel";
+            this.MainMapClimbingLabel.Size = new System.Drawing.Size(59, 16);
+            this.MainMapClimbingLabel.TabIndex = 10;
+            this.MainMapClimbingLabel.Text = "Climbing";
+            // 
+            // MainMapSwimmingLabel
+            // 
+            this.MainMapSwimmingLabel.AutoSize = true;
+            this.MainMapSwimmingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MainMapSwimmingLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.MainMapSwimmingLabel.Location = new System.Drawing.Point(1243, 286);
+            this.MainMapSwimmingLabel.Name = "MainMapSwimmingLabel";
+            this.MainMapSwimmingLabel.Size = new System.Drawing.Size(68, 16);
+            this.MainMapSwimmingLabel.TabIndex = 11;
+            this.MainMapSwimmingLabel.Text = "Swimming";
+            // 
+            // MainMapHikingLabel
+            // 
+            this.MainMapHikingLabel.AutoSize = true;
+            this.MainMapHikingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MainMapHikingLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.MainMapHikingLabel.Location = new System.Drawing.Point(1426, 286);
+            this.MainMapHikingLabel.Name = "MainMapHikingLabel";
+            this.MainMapHikingLabel.Size = new System.Drawing.Size(45, 16);
+            this.MainMapHikingLabel.TabIndex = 12;
+            this.MainMapHikingLabel.Text = "Hiking";
+            // 
             // Adventurer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1493, 762);
+            this.Controls.Add(this.MainMapHikingLabel);
+            this.Controls.Add(this.MainMapSwimmingLabel);
+            this.Controls.Add(this.MainMapClimbingLabel);
+            this.Controls.Add(this.MainMapFishingLabel);
             this.Controls.Add(this.AddHikingButton);
             this.Controls.Add(this.AddSwimmingButton);
             this.Controls.Add(this.AddClimbingPinButton);
@@ -189,6 +241,10 @@
         private System.Windows.Forms.Button AddSwimmingButton;
         private System.Windows.Forms.Button AddHikingButton;
         internal GMap.NET.WindowsForms.GMapControl gmap;
+        private System.Windows.Forms.Label MainMapFishingLabel;
+        private System.Windows.Forms.Label MainMapClimbingLabel;
+        private System.Windows.Forms.Label MainMapSwimmingLabel;
+        private System.Windows.Forms.Label MainMapHikingLabel;
     }
 }
 
