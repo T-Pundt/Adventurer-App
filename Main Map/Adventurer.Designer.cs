@@ -103,9 +103,9 @@
             this.CurrentCordinatesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CurrentCordinatesLabel.Location = new System.Drawing.Point(1310, 709);
             this.CurrentCordinatesLabel.Name = "CurrentCordinatesLabel";
-            this.CurrentCordinatesLabel.Size = new System.Drawing.Size(109, 15);
+            this.CurrentCordinatesLabel.Size = new System.Drawing.Size(116, 15);
             this.CurrentCordinatesLabel.TabIndex = 2;
-            this.CurrentCordinatesLabel.Text = "Current Cordinates";
+            this.CurrentCordinatesLabel.Text = "Current Coordinates";
             this.CurrentCordinatesLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // AddPinLabel
