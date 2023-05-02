@@ -35,9 +35,9 @@ namespace Final_Project
 
             set
             {
-                if (value.Contains('#'))
+                if (value.Contains('='))
                 {
-                    throw new Exception("Name of swimming spot is not allowed to contain '#'");
+                    throw new Exception("Name of swimming spot is not allowed to contain '='");
                 }
                 else
                 {

@@ -41,9 +41,9 @@ namespace Final_Project
 
             set
             {
-                if(value.Contains('#'))
+                if(value.Contains('='))
                 {
-                    throw new Exception("Name of fishing spot is not allowed to contain '#'");
+                    throw new Exception("Name of fishing spot is not allowed to contain '='");
                 }
                 else
                 {
@@ -58,9 +58,9 @@ namespace Final_Project
 
             set
             {
-                if (value.Contains('#'))
+                if (value.Contains('='))
                 {
-                    throw new Exception("Fish in the area is not allowed to contain '#'");
+                    throw new Exception("Fish in the area is not allowed to contain '='");
                 }
                 else
                 {
