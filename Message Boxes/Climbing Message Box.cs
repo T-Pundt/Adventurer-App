@@ -58,7 +58,7 @@ namespace Final_Project
             }
         }
 
-        private void ClimbingCreateHikingClassButton_Click(object sender, EventArgs e)
+        private void ClimbingCreateClassButton_Click(object sender, EventArgs e)
         {
             if (ClimbingDistanceBar.Value != 0 && ClimbingRockTypeTextBox.Text != null && ClimbingRouteDifficultyTextBox.Text != null && ClimbingNameOfRouteTextBox.Text != null && _pictureFileName != null)
             {

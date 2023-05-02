@@ -44,7 +44,7 @@
             this.ClimbingAddAPictureButtonLabel = new System.Windows.Forms.Label();
             this.ClimbingDisplaySelectedPictureBox = new System.Windows.Forms.PictureBox();
             this.ClimbingDisplayPictureSelectedLabel = new System.Windows.Forms.Label();
-            this.ClimbingCreateHikingClassButton = new System.Windows.Forms.Button();
+            this.ClimbingCreateClassButton = new System.Windows.Forms.Button();
             this.ClimbingRouteDegreeText = new System.Windows.Forms.Label();
             this.UpdateAllClimbingMessageBox = new System.Windows.Forms.Timer(this.components);
             this.ClimbingUploadPictureDialog = new System.Windows.Forms.OpenFileDialog();
@@ -194,15 +194,15 @@
             this.ClimbingDisplayPictureSelectedLabel.TabIndex = 29;
             this.ClimbingDisplayPictureSelectedLabel.Text = "Selected Picture";
             // 
-            // ClimbingCreateHikingClassButton
+            // ClimbingCreateClassButton
             // 
-            this.ClimbingCreateHikingClassButton.Location = new System.Drawing.Point(593, 802);
-            this.ClimbingCreateHikingClassButton.Name = "ClimbingCreateHikingClassButton";
-            this.ClimbingCreateHikingClassButton.Size = new System.Drawing.Size(105, 45);
-            this.ClimbingCreateHikingClassButton.TabIndex = 30;
-            this.ClimbingCreateHikingClassButton.Text = "Create";
-            this.ClimbingCreateHikingClassButton.UseVisualStyleBackColor = true;
-            this.ClimbingCreateHikingClassButton.Click += new System.EventHandler(this.ClimbingCreateHikingClassButton_Click);
+            this.ClimbingCreateClassButton.Location = new System.Drawing.Point(593, 802);
+            this.ClimbingCreateClassButton.Name = "ClimbingCreateClassButton";
+            this.ClimbingCreateClassButton.Size = new System.Drawing.Size(105, 45);
+            this.ClimbingCreateClassButton.TabIndex = 30;
+            this.ClimbingCreateClassButton.Text = "Create";
+            this.ClimbingCreateClassButton.UseVisualStyleBackColor = true;
+            this.ClimbingCreateClassButton.Click += new System.EventHandler(this.ClimbingCreateClassButton_Click);
             // 
             // ClimbingRouteDegreeText
             // 
@@ -230,7 +230,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(710, 859);
             this.Controls.Add(this.ClimbingRouteDegreeText);
-            this.Controls.Add(this.ClimbingCreateHikingClassButton);
+            this.Controls.Add(this.ClimbingCreateClassButton);
             this.Controls.Add(this.ClimbingDisplayPictureSelectedLabel);
             this.Controls.Add(this.ClimbingDisplaySelectedPictureBox);
             this.Controls.Add(this.ClimbingAddAPictureButtonLabel);
@@ -273,7 +273,7 @@
         private System.Windows.Forms.Label ClimbingAddAPictureButtonLabel;
         private System.Windows.Forms.PictureBox ClimbingDisplaySelectedPictureBox;
         private System.Windows.Forms.Label ClimbingDisplayPictureSelectedLabel;
-        private System.Windows.Forms.Button ClimbingCreateHikingClassButton;
+        private System.Windows.Forms.Button ClimbingCreateClassButton;
         private System.Windows.Forms.Label ClimbingRouteDegreeText;
         private System.Windows.Forms.Timer UpdateAllClimbingMessageBox;
         private System.Windows.Forms.OpenFileDialog ClimbingUploadPictureDialog;
