@@ -133,6 +133,7 @@
             this.AddClimbingPinButton.Size = new System.Drawing.Size(75, 75);
             this.AddClimbingPinButton.TabIndex = 5;
             this.AddClimbingPinButton.UseVisualStyleBackColor = true;
+            this.AddClimbingPinButton.Click += new System.EventHandler(this.AddClimbingPinButton_Click);
             // 
             // AddSwimmingButton
             // 

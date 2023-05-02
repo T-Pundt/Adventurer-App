@@ -42,9 +42,10 @@ namespace Final_Project
 
 
         #region MessageBoxVariables
-        public FishingMessageBox fishingmessagebox = new FishingMessageBox();
-        public SwimmingMessageBox swimmingmessagebox = new SwimmingMessageBox();
-        public HikingMessageBox hikingmessagebox = new HikingMessageBox();
+        FishingMessageBox fishingmessagebox = new FishingMessageBox();
+        SwimmingMessageBox swimmingmessagebox = new SwimmingMessageBox();
+        HikingMessageBox hikingmessagebox = new HikingMessageBox();
+        ClimbingMessageBox climbingmessagebox = new ClimbingMessageBox();
         #endregion
 
 
@@ -138,7 +139,29 @@ namespace Final_Project
             }
         }
 
+        private void AddClimbingPinButton_Click(object sender, EventArgs e)
+        {
+            climbingmessagebox.Show();
+            climbingmessagebox.Visible = false;
 
+
+            if (climbingmessagebox.ShowDialog() == DialogResult.OK)
+            {
+
+                GMapOverlay markers = new GMapOverlay("markers");
+                GMapMarker marker =
+                  new GMap.NET.WindowsForms.Markers.GMarkerGoogle(
+                      gmap.Position,
+                     GMap.NET.WindowsForms.Markers.GMarkerGoogleType.red_pushpin);
+
+
+                string tag = climbingmessagebox.ItemTag;
+                marker.Tag = tag;
+                markers.Markers.Add(marker);
+                gmap.Overlays.Add(markers);
+            }
+
+        }
 
 
         #endregion
@@ -165,13 +188,13 @@ namespace Final_Project
             }
             else if (_firstChar == 'C')
             {
-
+                climbingmessagebox.DetermineClass(_stringOfTag);
             }
         }
 
+
         #endregion
 
-        
     }
 
 

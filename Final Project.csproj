@@ -249,11 +249,24 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Display Information Classes\DisplayClimbingPinInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Display Information Classes\DisplayClimbingPinInformation.Designer.cs">
+      <DependentUpon>DisplayClimbingPinInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pin Classes\ClimbingPin.cs" />
     <Compile Include="Display Information Classes\DisplayHikingPinInformation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Display Information Classes\DisplayHikingPinInformation.Designer.cs">
       <DependentUpon>DisplayHikingPinInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message Boxes\Climbing Message Box.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message Boxes\Climbing Message Box.Designer.cs">
+      <DependentUpon>Climbing Message Box.cs</DependentUpon>
     </Compile>
     <Compile Include="Pin Classes\HikingPin.cs" />
     <Compile Include="Message Boxes\HikingMessageBox.cs">
@@ -298,6 +311,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Display Information Classes\DisplayHikingPinInformation.resx">
       <DependentUpon>DisplayHikingPinInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Information Classes\DisplayClimbingPinInformation.resx">
+      <DependentUpon>DisplayClimbingPinInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message Boxes\Climbing Message Box.resx">
+      <DependentUpon>Climbing Message Box.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Message Boxes\HikingMessageBox.resx">
       <DependentUpon>HikingMessageBox.cs</DependentUpon>
